@@ -44,7 +44,7 @@
             Grid.Column="2"
             Margin="20"
             HorizontalAlignment="Center"
-            ItemsSource="{Binding dayList}"
+            Name="days_combo"
             SelectedItem="{Binding days, Mode=TwoWay}"
         />
         <Button

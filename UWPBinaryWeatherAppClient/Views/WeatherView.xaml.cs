@@ -25,6 +25,7 @@ namespace UWPBinaryWeatherAppClient.Views
         public WeatherView()
         {
             this.InitializeComponent();
+            days_combo.ItemsSource = new List<int>() { 1, 3, 7 };
         }
         private void TownsSelectionChanged(object sender, SelectionChangedEventArgs e)
         {

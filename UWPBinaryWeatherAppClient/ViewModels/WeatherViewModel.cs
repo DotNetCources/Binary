@@ -17,13 +17,11 @@ namespace UWPBinaryWeatherAppClient.ViewModels
         public WeatherModel Forecast { get; set; }
         public ICommand ForecastCommand { get; set; }
         public ObservableCollection<string> Towns { get; private set; }
-        public List<int> daysList { get; set; }
         public string city { get; set; }
         public int days { get; set; }
 
         public WeatherViewModel()
         {
-            daysList = new List<int>() { 1, 3, 7 };
             ForecastCommand = new RelayCommand(GetForecast);
             Towns = new ObservableCollection<string>();
             Forecast = new WeatherModel();
